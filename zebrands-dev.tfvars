@@ -1,0 +1,12 @@
+region = "us-east-1"
+env = "dev"
+name = "zebrands-dev"
+cluster_version = "1.20"
+worker_groups = "app"	
+instance_type = ["t3.small"]
+min_capacity = "3"
+max_capacity = "10"
+capacity_type = "SPOT"
+cidr = "172.22.0.0/16"
+private_subnets = ["172.22.0.0/20", "172.22.16.0/20", "172.22.32.0/20"]
+public_subnets = ["172.22.48.0/20", "172.22.64.0/20", "172.22.80.0/20"]
